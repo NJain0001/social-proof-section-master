@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    line-height: 1.5em;
+}
+
+body {
+    padding: 5.5rem 2.2rem;
+}
+
+.attention-grabber-section {
+    text-align: center;
+}
+
+.main-headline {
+    color: hsl(300, 43%, 22%);
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    line-height: 1em;
+}
+
+.sub-headline {
+    margin-bottom: 2rem;
+    color: hsl(303, 10%, 53%)
+}
+
+.star-rating-section {
+    margin-bottom: 4rem;
+}
+.star-rating-item {
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    text-align: center;
+    height: 4.5rem;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.star-rating-item span {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.star-rating-section .star-rating-item:last-of-type {
+    margin-bottom: 0;
+}
+
+.user-review {
+    padding: 2.5rem;
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 12px;
+}
+
+.user {
+    margin-bottom: 1rem;
+}
+.user-image {
+    border-radius: 50%;
+    width:12.5%;
+    display: inline-block;
+    margin-right: 1.3rem;
+}
+
+.user-information {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.full-name {
+    font-weight: bold;
+}
+.job-title {
+    color: hsl(333, 80%, 67%)
+}
+
+.review {
+    letter-spacing: .05em;
+}
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        padding: 5.5rem 11.5rem;
+    }
+    .flex {
+        display: flex;
+    }
+
+    .attention-grabber-section {
+        width: 50%;
+        text-align: left;
+        padding-right: 4rem;
+
+    }
+
+    .main-headline {
+        margin-bottom: .5rem;
+        font-size: 50px;
+    }
+    .sub-headline {
+        font-size: 14px;
+    }
+    .star-rating-item {
+        position: relative;
+        width: 450px;
+        height: 25%;
+    }
+
+    .stars {
+        display: inline-block;
+        margin-right: 2rem;
+        left: 8%;
+        position: absolute;
+    }
+    .star-rating-item > span {
+        position: absolute;
+        left: 45%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .star-rating-item:nth-child(2) {
+        margin-left: 11%;
+    }
+
+    .star-rating-item:nth-child(3) {
+        margin-left: 22%;
+    }
+
+    .user-review-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+
+    .user-review {
+        margin-right: 2rem;
+    }
+
+    .user-review:last-of-type {
+        margin-right: 0;
+        margin-top: 8%;
+    }
+
+    .user-review:nth-child(2) {
+        margin-top: 4%;
+    }
+
+
+
+    .review {
+        font-size: 11px;
+    }
+
+}
